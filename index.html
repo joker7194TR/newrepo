@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<title>
+	Tabys
+	</title>
+	<meta name="description" content="Agency">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+	&nbsp&nbsp
+<div class="nav">
+	<div class="def_wrap">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <\>Logo
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="#front" target="">Home</a>
+    <a href="#our-services" target="">Services</a>
+    <a href="#about-us" target="">About Us</a>
+    <a href="#calculator" target="">Calculator</a>
+    <a href="#testimonials" target="">Testimonials</a>
+    <a href="#faqs" target="">FAQs</a>
+  </div>  
+  </div>
+</div>
+</header>
+
+<section id="front" class="front">
+	<div class="front_wrap def_wrap">
+		<div class="front_col1">
+			<h1>A Clean Home is a Happy Home</h1>
+			<p>Tabys INC is a team of top quality cleaners offer a cleaning 
+service like no other. We here to make your life easier 
+with a full range of house cleaning services.We will help 
+you to transform your home into a dream place.</p>
+			<div class="btn_container">
+				<div class="about-us_btns">
+				<div class="about-us_btn_book btn_book btn">
+					<a class="btn_inner" onclick="openLightbox()">Book Now</a>
+				</div>
+				<div class="about-us_btn_calculate btn_calculate btn">
+					<a class="btn_inner" href="#calculator">Calculate Price</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="front_col2">
+			<div class="front_form_wrap">
+				<p class="form_title">Contac Us</p>
+				<form class="front_form" action="">
+					        <div class="lightbox_form_row">
+        <div class="front_form_field_wrap lightbox_field_left">	
+        	<label for="firstName">First Name</label>
+        	<input type="text" id="firstName" required>
+        </div>
+        <div class="front_form_field_wrap">
+        	<label for="lastName">Last Name</label>
+        	<input type="text" id="lastName" required>
+        </div>
+        </div>
+
+        <div class="lightbox_form_row">
+        <div class="front_form_field_wrap lightbox_field_left">	
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="front_form_field_wrap">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+        </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button id="submitForm" onclick="submitForm()">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="why-us">
+		<div class="why-us_wrap def_wrap">
+			<b>Why Chose Us?</b>
+			<div class="why-us_list">
+				<div class="why-us_row">
+				<div class="why-us_col">
+					<img src="img/icon5.svg" alt="img">
+					<p>Fast and <br> Reliable</p>
+				</div>
+				<div class="why-us_col">
+					<img src="img/icon1.svg" alt="img">
+					<p>Personalized<br>Service</p>
+				</div>
+				</div>
+				<div class="why-us_row">
+				<div class="why-us_col">
+					<img src="img/icon4.svg" alt="img">
+					<p>Experienced<br>crew</p>
+				</div>
+				<div class="why-us_col">
+					<img src="img/icon2.svg" alt="img">
+					<p>Transperency<br>and Trust</p>
+				</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section id="our-services" class="our-services">
+	<div class="our-services_wrap def_wrap">
+
+		<div class="our-services_txt">
+			<h2>Our Services</h2>
+			<p>We offer a wide array of cleaning services designed to meet the unique needs of our diverse clientele. Whether it's a residential space, a commercial establishment, or a specialized cleaning requirement, our versatile range of services ensures that we have the perfect solution for you.</p>
+		</div>
+
+		<div class="our-services_main">
+	<div class="service-list">
+
+	  <div class="service-item" onclick="showService('service1')">Studio</div>
+	  <div class="service-item" onclick="showService('service2')">One bedroom</div>
+	  <div class="service-item" onclick="showService('service3')">Two bedrooms</div>
+	  <div class="service-item" onclick="showService('service4')">Commercial</div>
+	  <div class="service-item" onclick="showService('service5')">Move in/out cleaning</div>
+	  <div class="service-item" onclick="showService('service6')">Extras</div>
+
+	</div>
+
+	<div class="service-description">
+	  <h2 id="service-title">Service Title</h2>
+	  <p id="service-info">Service information goes here.</p>
+	  <div class="service_img_wrap">
+	  	<div class="service_img_row">
+	  		<img id="service-image1" src="" alt="Service Image">
+	  		<img id="service-image2" src="" alt="Service Image">
+	  	</div>
+	  	<div class="service_img_row">
+	  		<img id="service-image3" src="" alt="Service Image">
+	  		<img id="service-image4" src="" alt="Service Image">
+	  	</div>
+	  </div>
+	  <div class="sevice_btn_wrap">
+	  	<div id="service_btn" class="btn">
+			<a class="btn_inner" onclick="openLightbox()">Book Now</a>
+		</div>
+	  </div>
+	</div>
+		</div>
+	</div>
+</section>
+
+<section id="about-us" class="about-us">
+	<div class="about-us_wrap def_wrap">
+
+		<div class="about-us_desc_col">
+			<h4>ABOUT US</h4>
+			<h2>Sweeping Away Stress TABYS INC is Your Trusted Cleaning Companion</h2>
+			<p class="about-us_text1">
+				At the heart of TABYS INC is a client-centric approach that prioritizes your unique needs. We understand that each space is distinct, and our services are meticulously tailored to meet the specific requirements of our diverse clientele. Our dedicated team of professionals, extensively trained and committed to excellence, brings expertise and passion to every cleaning project.
+			</p>
+			<p class="about-us_text2">
+				We take pride in embracing cutting-edge technology, utilizing state-of-the-art equipment and innovative cleaning solutions to ensure efficiency and effectiveness in our services. Quality assurance is ingrained in our ethos, with rigorous measures in place to maintain the highest standards across all our cleaning tasks. When you choose TABYS INC, you can trust that your space will not only be clean but will also meet our stringent quality benchmarks. Contact us today to schedule your cleaning service and discover how we can elevate your living and working environment
+			</p>
+			<div class="about-us_btns">
+				<div class="about-us_btn_book btn_book btn">
+					<a class="btn_inner" onclick="openLightbox()">Book Now</a>
+				</div>
+				<div class="about-us_btn_calculate btn_calculate btn">
+					<a class="btn_inner" href="#calculator">Calculate Price</a>
+				</div>
+			</div>
+		</div>
+		<div class="about-us_img_col">
+			<div class="about-us_img_wrap">
+				<img id="img_about1" src="img/img_about1.png" alt="cleaning">
+				<img id="img_about2" src="img/img_about2.webp" alt="cleaning">
+			</div>
+		</div>
+
+	</div>     
+</section>
+
+<section id="calculator" class="calculator">
+	<div class="calculator_wrap def_wrap">
+		<div class="calculator_desc">
+			<h2>Calculate price</h2>
+		</div>
+		<div class="calculator_box">
+
+	<label for="cleaningType">Select Cleaning Type</label>
+	<select id="cleaningType" onchange="toggleFields()">
+	    <option value="residential">Residential</option>
+	    <option value="commercial">Commercial</option>
+	</select>
+
+	<div id="residentialFields">
+		<div class="calculatorFields_wrap">
+		<div class="residentialFields_col ">
+		<label for="residentialCleaningOption">Select Cleaning Option</label><br>
+	        <select id="residentialCleaningOption">
+	            <option value="basic">Basic Cleaning</option>
+	            <option value="deep">Deep Cleaning</option>
+	            <option value="premium">Premium Cleaning</option>
+	        </select><br>
+	    <label id="residentlabel" for="residentialArea">Square Feet of Your Area:</label><br>
+	    <input type="range" id="residentialArea" min="500" max="5000" value="1000" step="100">
+	    <output for="residentialArea" id="residentialAreaOutput">1000 sq ft</output>
+	    <br>
+	    <label id="bedroomlabel" for="bedrooms">Number of Bedrooms:</label>
+	    <br>
+	    <input type="number" id="bedrooms" min="1" value="1"><br>
+	    <label for="bathrooms">Number of Bathrooms:</label>
+	    <br>
+	    <input type="number" id="bathrooms" min="1" value="1">
+	    
+	    </div>
+
+	    <div class="residentialFields_col ">
+	    <div class="additional-services">
+	        <label>Additional Services</label>
+	        <div class="additionals_row">
+	        	<input type="checkbox" id="service1" value="20"> Oven cleaning
+	      	</div>
+	      	<div class="additionals_row">
+	        	<input type="checkbox" id="service2" value="20"> Laundry
+	    		</div>
+	    		<div class="additionals_row">
+	        	<input type="checkbox" id="service3" value="20"> Window cleaning
+	        </div>
+	        <div class="additionals_row">		
+	        	<input type="checkbox" id="service4" value="20"> Fridge cleaning
+	    		</div>
+	    </div>
+	    <p>Estimated Price</p>
+	    <div id="resultResidential" class="result_calc"></div>
+		</div>
+		</div>
+
+	</div>
+
+	<div id="commercialFields" style="display: none;">
+		<div class="calculatorFields_wrap">
+		<div class="commercialFields_col">
+		<div class="commericalFields">
+			<div class="comm_leb_title">	
+				<label for="commercialCleaningOption">Select Cleaning Option:</label>
+			</div>
+			<div class="comm_optinons">	
+		        <select id="commercialCleaningOption">
+		            <option value="basic">Basic Cleaning</option>
+		            <option value="deep">Deep Cleaning</option>
+		            <option value="premium">Premium Cleaning</option>
+		        </select>
+		   </div>
+		   <div class="com_range_lab">      
+		    	<label id="" for="commercialArea">Square Feet of Your Area:</label>
+		    </div>	
+		    <input type="range" id="commercialArea" min="500" max="10000" value="2000" step="100">
+		    <output for="commercialArea" id="commercialAreaOutput">2000 sq ft</output>
+
+		    
+		</div>    
+	    <div class="additional-services additional_com">
+					<div class="add_com_title">    	
+	        	<label>Additional Services (+$25 each):</label>
+	      	</div>
+	      	<div class="add_com_row">
+	        	<input type="checkbox" id="service5" value="25"> Cabinet cleaning
+	        </div>	
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service6" value="25"> Baseboard cleaning
+	      	</div>
+	      	<div class="add_com_row">
+	        	<input type="checkbox" id="service7" value="25"> Dusting blinds
+	        </div>
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service8" value="25"> Screen cleaning
+	        </div>	
+	        <div class="add_com_row">	
+	        	<input type="checkbox" id="service9" value="25"> Window cleaning
+	      	</div>
+	      	<div class="result_com">
+		    	<div id="resultComertial" class="result_calc"></div>
+		    </div>
+	        
+	    </div>
+	    
+	    </div>
+		</div>
+	</div>
+	<button onclick="calculatePrice()">Calculate Price</button>
+			</div>
+		</div>
+</section>
+
+<section id="testimonials" class="coments">
+	<div class="coments_wrap def_wrap">
+		<div class="coments_description">
+			<h4>Testimonials</h4>
+			<h2>Our valued clients’ testimonials speak <br>volumes about our work</h2>
+			<div class="about-us_btn_book btn_book btn"><a class="btn_inner" onclick="openLightbox()">Book Now</a></div>
+		</div>
+		<div class="coments_table">
+			<div class="coments_row coments_row1">
+				<div class="coment_item">
+					<div class="coment_top">
+						<div class="quote-marks"></div>
+						<div class="coment_name">Sam Johnson</div>
+						<div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+					</div>
+					<div class="coment_txt">
+						<p>What an amazing job. We asked Sunlight Cleaning for the deep clean. Needless to say, EVERYTHING was cleaned – I mean every single thing.</p>
+					</div>
+				</div>
+				<div class="coment_item">
+					<div class="coment_top">
+						<div class="quote-marks"></div>
+						<div class="coment_name">Sam Johnson</div>
+						<div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+					</div>
+					<div class="coment_txt">
+						<p>What an amazing job. We asked Sunlight Cleaning for the deep clean. Needless to say, EVERYTHING was cleaned – I mean every single thing.</p>
+					</div>
+				</div>
+			</div>
+			<div class="coments_row coments_row2">
+				<div class="coment_item">
+					<div class="coment_top">
+						<div class="quote-marks"></div>
+						<div class="coment_name">Sam Johnson</div>
+						<div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+					</div>
+					<div class="coment_txt">
+						<p>What an amazing job. We asked Sunlight Cleaning for the deep clean. Needless to say, EVERYTHING was cleaned – I mean every single thing.</p>
+					</div>
+				</div>
+				<div class="coment_item">
+					<div class="coment_top">
+						<div class="quote-marks"></div>
+						<div class="coment_name">Sam Johnson</div>
+						<div class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+					</div>
+					<div class="coment_txt">
+						<p>What an amazing job. We asked Sunlight Cleaning for the deep clean. Needless to say, EVERYTHING was cleaned – I mean every single thing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="faqs" class="faqs">
+		<div class="faqs_wrap def_wrap">
+			<h3 class="faqs_header">
+				Additional Information <br>& FAQ
+			</h3>
+			<div class="faqs_list">
+				<div class="faq-container">
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer1')">How can I request a cleaning service?</div>
+    <div id="answer1" class="answer">Scheduling a cleaning service with us is easy! Simply  fill out the online booking form. You can also give us a call or  send us an email, and our friendly team will assist you in scheduling a  convenient appointment.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer2')">How do you determine the cost of cleaning services?</div>
+    <div id="answer2" class="answer">The cost of our cleaning services depends on factors such as the size of the space, the type of cleaning required, and any additional services requested. We offer transparent pricing, and you can check the services section on our website or by contacting our customer service.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer3')"> How long does a typical cleaning service take?</div>
+    <div id="answer3" class="answer">The duration of our cleaning services varies based on factors such as  the size of the space, the level of cleaning required, and any specific  requests you may have. Our team will provide you with an estimated  timeframe during the booking process, and we strive to complete our  services efficiently without compromising on quality. If you have time  constraints or specific scheduling needs, please let us know, and we  will do our best to accommodate them.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer4')">Do I need to be home during the cleaning service?</div>
+    <div id="answer4" class="answer">It's completely up to you. Many of our clients prefer to be present  during the first cleaning, but our professional and trustworthy team can  perform their duties efficiently whether you're at home or not. We'll  discuss your preferences during the booking process.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer5')">How do you ensure the safety of my personal belongings?</div>
+    <div id="answer5" class="answer">Our team is trained to handle your belongings with care and respect. We  take all necessary precautions to ensure the safety and security of your  personal items during the cleaning process.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer6')">What areas do you serve?</div>
+    <div id="answer6" class="answer">Tabys INC proudly serves all the 5 boroughs of New York city.  Contact us to confirm if we cover your specific location.</div>
+  	</div>
+
+  	<div class="faq-item">
+    <div class="question" onclick="toggleAnswer('answer7')">Can I customize my cleaning service to focus on specific areas or tasks?</div>
+    <div id="answer7" class="answer">Absolutely! We understand that each client's needs are unique. You can  customize your cleaning service to address specific areas or tasks that  matter most to you. Just let us know your preferences during the booking  process.</div>
+  	</div>
+
+			</div>
+
+			</div>
+		</div>
+</section>
+
+
+
+<section class="lightbox">
+	<!-- <button onclick="openLightbox()">Open Calculator</button> -->
+
+	<div id="lightbox" onclick="closeLightbox()">
+    <div id="form-container" onclick="stopPropagation(event)">
+        <span id="close-btn" onclick="closeLightbox()">X</span>
+        
+        <b>Contact us</b>
+        <div class="lightbox_form_row">
+        <div class="lightbox_form_field_wrap lightbox_field_left">	
+        	<label for="firstName">First Name</label>
+        	<input type="text" id="firstName" required>
+        </div>
+        <div class="lightbox_form_field_wrap">
+        	<label for="lastName">Last Name</label>
+        	<input type="text" id="lastName" required>
+        </div>
+        </div>
+
+        <div class="lightbox_form_row">
+        <div class="lightbox_form_field_wrap lightbox_field_left">	
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="lightbox_form_field_wrap">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+        </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button id="submitForm" onclick="submitForm()">Submit</button>
+    </div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer_wrap def_wrap">
+		<div class="footer_col footer_col1">
+			<div class="footer_logo">Logo</div>
+			<div class="copyright">&copy; 2023 Tabys INC. All rights reserved.</div>
+		</div>
+		<div class="footer_col">
+			<div class="footer_tel">
+				+1 (347) 513-5856
+			</div>
+			<div class="footer_email">
+				info@nyc-cleaning.com
+			</div>
+			<div class="footer_socialrow">
+				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    
+<script src="scripts/script.js"></script>
+<script src="scripts/calculator.js"></script>
+		
+
+</body>
+</html>
